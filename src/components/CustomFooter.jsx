@@ -7,7 +7,7 @@ function MyFooter () {
             <p>
               <small>
                 &copy;
-                {new Date().getFullYear()}
+                {' ' + new Date().getFullYear() + ' '}
                 Alejandro Mili&aacute;n. All rights reserved.
               </small>
             </p>

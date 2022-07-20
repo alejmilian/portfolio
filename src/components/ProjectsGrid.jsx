@@ -1,6 +1,7 @@
 import Project from './Project'
+import PropTypes from 'prop-types'
 
-function Projects () {
+function Projects ({ projects }) {
   return (
     <section id="projects" className="section is-medium">
       <div className="container block">
@@ -8,13 +9,17 @@ function Projects () {
       </div>
       <div className="container">
         <div className="columns is-centered is-5">
-          <Project />
-          <Project />
-          <Project />
+          {
+            projects.map((project) => { return (<Project key={project.name} {...project} />) })
+          }
         </div>
       </div>
     </section>
   )
+}
+
+Projects.propTypes = {
+  projects: PropTypes.array
 }
 
 export default Projects

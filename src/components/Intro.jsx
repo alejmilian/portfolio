@@ -1,6 +1,15 @@
-function Intro () {
+import PropTypes from 'prop-types'
+
+import subtleprism from '../images/subtle-prism.svg'
+
+const introBackgroundStyle = {
+  backgroundImage: 'url(' + subtleprism + ')',
+  backgroundPosition: 'center'
+}
+
+function Intro ({ github, linkedin, resume }) {
   return (
-    <section id='intro' className='is-family-sans-serif hero is-link is-medium'>
+    <section id='intro' style={introBackgroundStyle} className='is-family-sans-serif hero is-link is-medium'>
       <div className='hero-body'>
         <div className='container'>
           <div className='columns'>
@@ -13,7 +22,7 @@ function Intro () {
               <div className='buttons is-flex is-align-items-center'>
                 <a
                   className='button'
-                  href='https://github.com/alejmilian '
+                  href={github}
                   target='_blank'
                   rel='noreferrer'>
                   <span className='icon'>
@@ -23,7 +32,7 @@ function Intro () {
                 </a>
                 <a
                   className='button'
-                  href='https://www.linkedin.com/in/alejandro-mili%C3%A1n-mor%C3%B3n-baa084216/'
+                  href={linkedin}
                   target='_blank'
                   rel='noreferrer'>
                   <span className='icon is-large'>
@@ -32,8 +41,10 @@ function Intro () {
                   <span>Linkedin</span>
                 </a>
                 <a
-                  href='https://drive.google.com/uc?export=download&id=1ND237EvFi7D73eplhNzXUk1wO2AF8P10'
-                  className='button is-dark'>
+                  className='button is-dark'
+                  href={resume}
+                  target='_blank'
+                  rel='noreferrer'>
                   Get Resume
                 </a>
               </div>
@@ -43,6 +54,12 @@ function Intro () {
       </div>
     </section>
   )
+}
+
+Intro.propTypes = {
+  github: PropTypes.string,
+  linkedin: PropTypes.string,
+  resume: PropTypes.string
 }
 
 export default Intro

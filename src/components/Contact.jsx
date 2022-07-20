@@ -1,3 +1,5 @@
+import ContactForm from './ContactForm'
+
 function Contact () {
   return (
       <section id="contact" className="section is-medium">
@@ -16,67 +18,7 @@ function Contact () {
             </div>
           </div>
           <div className="column is-half box">
-            <form id="contact-form">
-              <div className="field">
-                <label className="label">Name</label>
-                <div className="control has-icons-left">
-                  <input
-                    className="input"
-                    type="text"
-                    placeholder="Text input"
-                    name="name"
-                    required="required"
-                  />
-                  <span className="icon is-small is-left">
-                    <i className="fas fa-user"></i>
-                  </span>
-                </div>
-              </div>
-              <div className="field">
-                <label className="label">Subject</label>
-                <div className="control">
-                  <input
-                    className="input"
-                    type="text"
-                    placeholder="Text input"
-                    name="subject"
-                  />
-                </div>
-              </div>
-
-              <div className="field">
-                <label className="label">Email</label>
-                <div className="control has-icons-left">
-                  <input
-                    className="input"
-                    type="email"
-                    placeholder="hello@email.com"
-                    name="email"
-                    required="required"
-                  />
-                  <span className="icon is-small is-left">
-                    <i className="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-              <div className="field">
-                <label className="label">Message</label>
-                <div className="control">
-                  <textarea
-                    className="textarea"
-                    placeholder="Textarea"
-                    name="message"
-                    required="required"
-                  ></textarea>
-                </div>
-              </div>
-
-              <div className="field is-grouped">
-                <div className="control">
-                  <input className="button" type="submit" value="Send" />
-                </div>
-              </div>
-            </form>
+            <ContactForm/>
           </div>
         </div>
       </div>
