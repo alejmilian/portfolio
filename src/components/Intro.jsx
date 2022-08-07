@@ -7,7 +7,7 @@ const introBackgroundStyle = {
   backgroundPosition: 'center'
 }
 
-function Intro ({ github, linkedin, resume }) {
+function Intro ({ name, links }) {
   return (
     <section id='intro' style={introBackgroundStyle} className='is-family-sans-serif hero is-link is-medium'>
       <div className='hero-body'>
@@ -22,7 +22,7 @@ function Intro ({ github, linkedin, resume }) {
               <div className='buttons is-flex is-align-items-center'>
                 <a
                   className='button'
-                  href={github}
+                  href={links.github}
                   target='_blank'
                   rel='noreferrer'>
                   <span className='icon'>
@@ -32,7 +32,7 @@ function Intro ({ github, linkedin, resume }) {
                 </a>
                 <a
                   className='button'
-                  href={linkedin}
+                  href={links.linkedin}
                   target='_blank'
                   rel='noreferrer'>
                   <span className='icon is-large'>
@@ -42,7 +42,7 @@ function Intro ({ github, linkedin, resume }) {
                 </a>
                 <a
                   className='button is-dark'
-                  href={resume}
+                  href={links.resume}
                   target='_blank'
                   rel='noreferrer'>
                   Get Resume
@@ -57,9 +57,8 @@ function Intro ({ github, linkedin, resume }) {
 }
 
 Intro.propTypes = {
-  github: PropTypes.string,
-  linkedin: PropTypes.string,
-  resume: PropTypes.string
+  name: PropTypes.string,
+  links: PropTypes.object
 }
 
 export default Intro

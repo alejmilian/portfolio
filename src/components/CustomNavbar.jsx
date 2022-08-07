@@ -21,7 +21,7 @@ class CustomNavbar extends React.Component {
         <div className='navbar-brand'>
           <a className='navbar-item' href='index.html' target='_blank'>
             <i className='fa-solid' aria-hidden='true'>
-              Alejandro
+              {this.props.name.split(' ')[0]}
             </i>
           </a>
           <a
@@ -49,7 +49,7 @@ class CustomNavbar extends React.Component {
             </a>
             <a
               className='navbar-item'
-              href={this.props.contact.linkedin}
+              href={this.props.linkedin}
               target='_blank'
               rel='noreferrer'>
               <span className='icon'>
@@ -59,7 +59,7 @@ class CustomNavbar extends React.Component {
             </a>
             <a
               className='navbar-item'
-              href={this.props.contact.github}
+              href={this.props.github}
               target='_blank'
               rel='noreferrer'>
               <span className='icon'>
@@ -75,6 +75,7 @@ class CustomNavbar extends React.Component {
 }
 
 CustomNavbar.propTypes = {
+  name: PropTypes.string,
   contact: PropTypes.object,
   linkedin: PropTypes.string,
   github: PropTypes.string

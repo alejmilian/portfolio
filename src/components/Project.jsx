@@ -9,8 +9,8 @@ function Project ({ name, image, description, codeurl, previewurl }) {
             <h4 className='card-header-title title is-4'>{name}</h4>
           </div>
           <div className='card-image'>
-            <figure className='image is-128X128'>
-              <img src={image} alt='cute' />
+            <figure className='image  is-4by3'>
+              <img src={image} alt='Project Image' />
             </figure>
           </div>
           <div className='card-content'>
@@ -21,13 +21,19 @@ function Project ({ name, image, description, codeurl, previewurl }) {
             </div>
           </div>
           <footer className='card-footer'>
-            <a href={codeurl} className='card-footer-item'>
+            <a href={codeurl}
+             className='card-footer-item'
+             rel="noreferrer"
+             target="_blank">
               <span className='icon'>
                 <i className='fa-brands fa-github-square' aria-hidden='true'></i>
               </span>
               <span className='icon-text'>Code</span>
             </a>
-            <a href={previewurl} className='card-footer-item'>
+            <a href={previewurl}
+            className='card-footer-item'
+            rel="noreferrer"
+            target="_blank">
               Preview
             </a>
           </footer>

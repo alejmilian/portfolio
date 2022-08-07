@@ -1,0 +1,18 @@
+{
+    "info": {
+        "name": "Alejandro Mili&aacute;n Mor&oacute;n",
+        "links": {
+            "github": "https://github.com/alejmilian",
+            "linkedin": "https://www.linkedin.com/in/alejmilian/",
+            "resume": "https://alejmilian.github.io/Alejandro's Resume.pdf"
+        },
+        "presentation": "I&apos;m a Computer Science student who enjoys solving technical problems, researching and developing new technologies, and designing software applications.",
+        "skills": [
+            "Nodes",
+            "Express",
+            "Javascript",
+            "SQL",
+            "Python"
+        ]
+    }
+}

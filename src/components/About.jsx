@@ -11,11 +11,11 @@ function About () {
         <p>
           I&apos;m familiar with a variety of programming languages and
           technologies, including
+          <span className='has-text-weight-semibold'> Node</span>,
+          <span className='has-text-weight-semibold'> Express</span>,
           <span className='has-text-weight-semibold'> JavaScript</span>,
-          <span className='has-text-weight-semibold'> Python</span>,
-          <span className='has-text-weight-semibold'> HTML</span>,
-          <span className='has-text-weight-semibold'> CSS</span> , and
-          <span className='has-text-weight-semibold'> PostgreSQL</span>.
+          <span className='has-text-weight-semibold'> SQL</span> , and
+          <span className='has-text-weight-semibold'> Python</span>.
         </p>
       </div>
     </section>
