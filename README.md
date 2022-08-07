@@ -1,17 +1,16 @@
-# Project portfolio
+# Project's Portfolio
 
 ![Website Snapshot](doc/img/og-1200x630.png)
 
 Project portfolio template developed using React and Bulma to be hosted in Firebase.
 
----
 ## Installation and Setup
 
 You will need `node` and `npm` installed globally on your machine. Visit [Node](https://nodejs.org/en/) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for more information.
 
-Clone down this repository by clicking the green clone or download button at the top right and copyin the url.
+Clone down this repository by clicking the green clone or download button at the top right and copy the URL.
 
-In your terminal, type the comman below replacing `repository` with the url you copied and `my_app` with the app name what you want:
+In your terminal, type the command below replacing `repository` with the URL you copied and `my_app` with the app name that you want:
 
 ```terminal
 git clone repository my_app
@@ -26,7 +25,7 @@ Then run to install all dependencies:
 npm install
 ```
 
-To check if the installation proces went whitout problems run:
+To check if the installation process went without problems run:
 
 ```terminal
 npm start
