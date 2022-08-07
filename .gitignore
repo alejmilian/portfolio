@@ -14,6 +14,9 @@
 # firebase
 /.firebase
 
+# Configuration, this should not be share
+/config
+
 # misc
 .DS_Store
 .env.local

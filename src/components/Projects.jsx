@@ -1,6 +1,6 @@
 import ProjectsGrid from './ProjectsGrid'
 
-import cute from '../images/cute.jpg'
+import cute from '../img/cute.jpg'
 
 const fakedProject = {
   name: 'fake',

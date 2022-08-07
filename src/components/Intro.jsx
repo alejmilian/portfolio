@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import subtleprism from '../images/subtle-prism.svg'
+import subtleprism from '../img/subtle-prism.svg'
 
 const introBackgroundStyle = {
   backgroundImage: 'url(' + subtleprism + ')',
