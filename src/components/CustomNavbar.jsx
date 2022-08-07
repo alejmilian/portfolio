@@ -7,7 +7,7 @@ class CustomNavbar extends React.Component {
     this.state = { isToggle: true, isActive: '', srOnly: 'sr-only' }
   }
 
-  handleClick = (e) => {
+  handleClick = () => {
     if (this.state.isToggle) {
       this.setState({ isToggle: false, isActive: 'is-active', srOnly: '' })
     } else {
@@ -25,14 +25,15 @@ class CustomNavbar extends React.Component {
             </i>
           </a>
           <a
+            href="javascript:void(0);"
             role='button'
             className={'navbar-burger ' + this.state.isActive}
             aria-label='menu'
             aria-expanded='false'
             onClick={this.handleClick}>
-            <span aria-hidden='true'></span>
-            <span aria-hidden='true'></span>
-            <span aria-hidden='true'></span>
+            <span aria-hidden='true' />
+            <span aria-hidden='true' />
+            <span aria-hidden='true' />
           </a>
         </div>
         <div id='navbarMenu' className={'navbar-menu ' + this.state.isActive}>

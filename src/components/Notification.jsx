@@ -12,22 +12,19 @@ function Notification ({ message, type, handelClose }) {
   if (type === 'success') {
     notification = (
       <div className="notification is-success" style={pined}>
-        <button className="delete" onClick={handelClose}></button>
-        {message}
+        <button className="delete" onClick={handelClose} /> {message}
       </div>
     )
   } else if (type === 'fail') {
     notification = (
       <div className="notification is-warning" style={pined}>
-        <button className="delete" onClick={handelClose}></button>
-        {message}
+        <button className="delete" onClick={handelClose} /> {message}
       </div>
     )
   } else if (type === 'error') {
     notification = (
       <div className="notification is-danger" style={pined}>
-        <button className="delete" onClick={handelClose}></button>
-        {message}
+        <button className="delete" onClick={handelClose} /> {message}
       </div>
     )
   }

@@ -36,7 +36,7 @@ function ContactForm () {
       })
   }
 
-  function handleClear (e) {
+  function handleClear () {
     for (let i = 0; i < 4; i++) form.current[i].value = ''
   }
 
@@ -54,7 +54,7 @@ function ContactForm () {
                 required="required"
               />
               <span className="icon is-small is-left">
-                <i className="fas fa-user"></i>
+                <i className="fas fa-user"/>
               </span>
             </div>
           </div>
@@ -82,7 +82,7 @@ function ContactForm () {
                 required="required"
               />
               <span className="icon is-small is-left">
-                <i className="fas fa-envelope"></i>
+                <i className="fas fa-envelope"/>
               </span>
             </div>
           </div>
@@ -94,7 +94,7 @@ function ContactForm () {
                 placeholder="Textarea"
                 name="message"
                 required="required"
-              ></textarea>
+              />
             </div>
           </div>
 

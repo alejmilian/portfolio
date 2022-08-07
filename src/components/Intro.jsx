@@ -26,7 +26,7 @@ function Intro ({ github, linkedin, resume }) {
                   target='_blank'
                   rel='noreferrer'>
                   <span className='icon'>
-                    <i className='fa-brands fa-github fa-1x'></i>
+                    <i className='fa-brands fa-github fa-1x' />
                   </span>
                   <span>GitHub</span>
                 </a>
@@ -36,7 +36,7 @@ function Intro ({ github, linkedin, resume }) {
                   target='_blank'
                   rel='noreferrer'>
                   <span className='icon is-large'>
-                    <i className='fa-brands fa-linkedin-in fa-1x'></i>
+                    <i className='fa-brands fa-linkedin-in fa-1x' />
                   </span>
                   <span>Linkedin</span>
                 </a>
